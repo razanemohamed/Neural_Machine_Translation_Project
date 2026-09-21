@@ -191,4 +191,6 @@ This notebook can be extended with:
 
 ## License
 
-This project is provided for educational and research use. If you plan to publish it publicly, consider adding an open-source license such as MIT.
+This project is for educational and research purposes.
+
+The code, notebook, and project materials are provided as-is for personal study and experimentation. You may use and learn from this work with attribution to the original author.

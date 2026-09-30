@@ -1,6 +1,6 @@
 # French-to-English Neural Machine Translation with PyTorch
 
-This project contains a notebook-based implementation of a neural machine translation (NMT) system using a Transformer-inspired architecture. The notebook focuses on translating from French to English by combining:
+This project contains a notebook-based implementation of a French-to-English neural machine translation (NMT) system using a Transformer-inspired architecture. It combines:
 
 - PyTorch
 - Hugging Face `transformers`
@@ -20,7 +20,7 @@ The notebook demonstrates a sequence-to-sequence translation pipeline for a Fren
 - preparing encoder and decoder input IDs
 - building the attention mechanism used in a Transformer-style model
 
-This project is intended as an educational and research-oriented implementation of core machine translation concepts.
+The project is intended for educational and research-oriented experimentation with core machine translation concepts. The current model is experimental: it produces several correct short translations, but its output remains inconsistent on more complex or context-dependent sentences.
 
 ## Project Goals
 
@@ -170,6 +170,16 @@ The current model is still experimental and produces imperfect translations. The
 
 These examples show that the model can capture some basic sentence patterns and short translations, but it still struggles with nuance, contextual meaning, and grammatical accuracy. This is expected for an early notebook-based sequence-to-sequence translation implementation.
 
+## Evaluation
+
+The notebook evaluates generated translations on the test split using word-level corpus BLEU. The saved notebook output reports:
+
+```text
+Corpus BLEU: 57.663231899567776
+```
+
+This corresponds to an approximate BLEU score of **57.66** when expressed as a percentage. BLEU is a corpus-level automatic metric and should be interpreted together with the sample translations above: a promising aggregate score does not mean that every sentence is fluent or semantically accurate.
+
 ## Notes
 
 - This project is intended for learning and experimentation.
@@ -183,7 +193,6 @@ This notebook can be extended with:
 
 - full encoder-decoder training loop
 - validation metric tracking
-- BLEU score evaluation
 - model checkpoint saving
 - beam search decoding for translation generation
 - a script version outside the notebook
